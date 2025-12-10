@@ -11,7 +11,6 @@ Members:
 PROJECT DOCUMENTATION
 MEASURES CREATED (12 Total)
 
-text
 1. Total Orders = COUNTROWS('Purchase_Orders')
 2. Total Cost = SUM('Purchase_Orders'[TotalCost])
 3. Average Order Value = DIVIDE([Total Cost], [Total Orders], 0)
@@ -25,6 +24,7 @@ text
 11. Delivered Shipments = CALCULATE(COUNTROWS('Shipment_Tracking'), 'Shipment_Tracking'[Status] = "Delivered")
 12. Delivery Success Rate = DIVIDE([Delivered Shipments], [Total Shipments], 0) * 100
 
+
 All measures stored in dedicated Measures table (best practice).
 DASHBOARD PAGES & VISUALS
 Page 1: Supply Chain Overview
@@ -32,6 +32,7 @@ Page 1: Supply Chain Overview
     Line Chart: Total Sales Orders by Month
 
     Column Chart: Total Cost by Supplier
+    
 
     Pie Chart: Purchase Order Status Distribution
 
